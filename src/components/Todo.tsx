@@ -22,7 +22,7 @@ export const Todo: React.FC<Props> = ({ id, title, completed, onRemoveTodo, onTo
             <label>{title}</label>
             <button
                 className="destroy"
-                onClick={() => onRemoveTodo({ id })}
+                onClick={() => {onRemoveTodo({ id })}}
             ></button>
         </div>
     );
